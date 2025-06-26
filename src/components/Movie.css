@@ -34,3 +34,9 @@
     padding-left: 10px;
     margin-top: 10px;
 }
+
+.button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

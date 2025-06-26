@@ -1,10 +1,37 @@
 import "./Movie.css"
 import data from "../data"
+import MovieDeleteButton from "./MovieDeleteButton"
+import DelleteAllButton from "./DeleteAllButton"
+import ReloadMovieBtn from "./ReloadMovieBtn"
+import { useState } from "react"
+
 
 const Movie = () => {
-    return <div className="all-movies">
+    const [movieList, setMovieList] = useState(data)
+
+    // movieList^^ created by useState          ^^
+    const deleteOneMovie = (idecko)=>{
+        const filteredMovies = movieList.filter((oneMovie)=>{
+            return oneMovie.id !== idecko
+        })
+        setMovieList(filteredMovies)
+    }
+
+
+    const deleteAllMovies = ()=>{
+        setMovieList([])
+    }
+
+
+    const reloadAll = ()=>{
+        setMovieList(data)
+    }
+
+
+return <section>
+    <div className="all-movies">
         {
-            data.map((oneMovie)=>{
+            movieList.map((oneMovie)=>{
                 const {id, image, title, age, tags, description} = oneMovie
 
                 return <div className="one-movie" key={id}>
@@ -13,11 +40,17 @@ const Movie = () => {
                     <p>{age}</p>
                     <p>{tags}</p>
                     <p>{description}</p>
+                    <MovieDeleteButton deleteMovie={()=> deleteOneMovie(id)}/>
 
                 </div>
             })
         }
     </div>
+    <div className="button-box">
+        <DelleteAllButton deleteMovies={deleteAllMovies}/>
+        <ReloadMovieBtn reloadMovies={reloadAll}/>
+    </div>
+</section>
 }
 
 export default Movie
