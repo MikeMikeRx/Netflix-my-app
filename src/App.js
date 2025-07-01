@@ -4,16 +4,28 @@ import categories from "./categories"
 
 const App = () =>{
   
-  const [typeOfMovie, setTypeOfMovie] = useState("comedy")
+  const [typeOfMovie, setTypeOfMovie] = useState("akcion")
 
   const filteredMovies = allMovies.filter( (oneMovie) => {
     return oneMovie["category"] === typeOfMovie
   }) 
 
-  console.log(filteredMovies)
 
   return <div>
-
+    {
+      filteredMovies.map( (oneMovie)=>{
+        const {id, image, title, age, tags, description} = oneMovie
+        
+        return <div>
+          <img src={image} alt="" />
+          <h2>{title}</h2>
+          <p>{age}</p>
+          <p>{tags}</p>
+          <p>{description}</p>
+        </div>
+          
+      })
+    }
    </div>
   
 }
