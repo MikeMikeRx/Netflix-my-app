@@ -4,7 +4,7 @@ import categories from "./categories"
 
 const App = () =>{
   
-  const [typeOfMovie, setTypeOfMovie] = useState("akcion")
+  const [typeOfMovie, setTypeOfMovie] = useState("action")
 
   const filteredMovies = allMovies.filter( (oneMovie) => {
     return oneMovie["category"] === typeOfMovie
@@ -12,22 +12,32 @@ const App = () =>{
 
 
   return <div>
-    {
-      filteredMovies.map( (oneMovie)=>{
-        const {id, image, title, age, tags, description} = oneMovie
-        
-        return <div>
-          <img src={image} alt="" />
-          <h2>{title}</h2>
-          <p>{age}</p>
-          <p>{tags}</p>
-          <p>{description}</p>
-        </div>
+    <div>
+      {
+        categories.map( (oneCategory, index)=>{
+          return <button key={index} onClick={()=> setTypeOfMovie(oneCategory)}>
+                    {oneCategory}</button>
+        })
+      }
+    </div>
+    <div>
+      {
+        filteredMovies.map( (oneMovie)=>{
+          const {id, image, title, age, tags, description} = oneMovie
           
-      })
-    }
-   </div>
+          return <div key={id}>
+            <img src={image} alt="" />
+            <h2>{title}</h2>
+            <p>{age}</p>
+            <p>{tags}</p>
+            <p>{description}</p>
+          </div>
+            
+        })
+      }
+    </div>
   
+  </div>
 }
 
 export default App

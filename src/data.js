@@ -32,7 +32,7 @@ const allMovies = [
         age: "+16",
         tags: "Gangster * Napínavý * Násilí",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
-        category: "romantic"
+        category: "action"
     },
     {
         id: 4,
@@ -41,7 +41,7 @@ const allMovies = [
         age: "+16",
         tags: "Gangster * Napínavý * Násilí",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
-        category: "romantic"
+        category: "action"
     },
 
 
@@ -54,7 +54,7 @@ const allMovies = [
         age: "+16",
         tags: "Gangster * Napínavý * Násilí",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
-        category: "akcion"
+        category: "romantic"
     },
     {
         id: 6,
@@ -63,7 +63,7 @@ const allMovies = [
         age: "+16",
         tags: "Rodinný * Napínavý * Romantický",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
-        category: "akcion"
+        category: "romantic"
     },
 ]
 
