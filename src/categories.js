@@ -1,3 +1,3 @@
-const categories = ["comedy", "romantic", "action"]
+const categories = ["Comedy", "Romantic", "Action", "Thriller"]
 
 export default categories

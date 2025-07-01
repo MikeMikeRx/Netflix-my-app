@@ -4,7 +4,7 @@ import categories from "./categories"
 
 const App = () =>{
   
-  const [typeOfMovie, setTypeOfMovie] = useState("action")
+  const [typeOfMovie, setTypeOfMovie] = useState("Action")
 
   const filteredMovies = allMovies.filter( (oneMovie) => {
     return oneMovie["category"] === typeOfMovie

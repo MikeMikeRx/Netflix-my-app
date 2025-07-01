@@ -4,6 +4,8 @@ import image3 from "./images/movie3.png"
 import image4 from "./images/movie4.png"
 import image5 from "./images/movie5.png"
 import image6 from "./images/movie6.png"
+import image7 from "./images/movie7.png"
+import image8 from "./images/movie8.png"
 
 
 const allMovies = [
@@ -14,7 +16,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
-        category: "comedy"
+        category: "Comedy"
     },
     {
         id: 2,
@@ -23,7 +25,7 @@ const allMovies = [
         age: "+13",
         tags: "Vtipný * Napínavý * Rodina",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
-        category: "comedy"
+        category: "Comedy"
     },
     {
         id: 3,
@@ -32,7 +34,7 @@ const allMovies = [
         age: "+16",
         tags: "Gangster * Napínavý * Násilí",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
-        category: "action"
+        category: "Action"
     },
     {
         id: 4,
@@ -41,12 +43,8 @@ const allMovies = [
         age: "+16",
         tags: "Gangster * Napínavý * Násilí",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
-        category: "action"
+        category: "Action"
     },
-
-
-
-
     {
         id: 5,
         image: image5,
@@ -54,7 +52,7 @@ const allMovies = [
         age: "+16",
         tags: "Gangster * Napínavý * Násilí",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
-        category: "romantic"
+        category: "Romantic"
     },
     {
         id: 6,
@@ -63,8 +61,27 @@ const allMovies = [
         age: "+16",
         tags: "Rodinný * Napínavý * Romantický",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
-        category: "romantic"
+        category: "Romantic"
     },
+    {
+        id: 7,
+        image: image7,
+        title: "Život",
+        age: "+13",
+        tags: "Vesmír * Napínavý * Nebezpečí",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+        category: "Thriller"
+    },
+    {
+        id: 8,
+        image: image8,
+        title: "Kód za miliardu dolarů",
+        age: "+13",
+        tags: "IT * Napínavý",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+        category: "Thriller"
+    },
+
 ]
 
 
