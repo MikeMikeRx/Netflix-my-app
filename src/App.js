@@ -12,20 +12,20 @@ const App = () =>{
 
 
   return <div>
-    <div>
+    <div className="all-buttons">
       {
         categories.map( (oneCategory, index)=>{
-          return <button key={index} onClick={()=> setTypeOfMovie(oneCategory)}>
+          return <button className="one-button" key={index} onClick={()=> setTypeOfMovie(oneCategory)}>
                     {oneCategory}</button>
         })
       }
     </div>
-    <div>
+    <div className="all-movies">
       {
         filteredMovies.map( (oneMovie)=>{
           const {id, image, title, age, tags, description} = oneMovie
           
-          return <div key={id}>
+          return <div key={id} className="one-movie">
             <img src={image} alt="" />
             <h2>{title}</h2>
             <p>{age}</p>
