@@ -1,9 +1,6 @@
-import Movie from "./components/Movie"
-
-
 const App = () =>{
   return (
-    <Movie />
+    <h1>TEXT</h1>
   )
 }
 
