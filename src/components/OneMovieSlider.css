@@ -1,0 +1,4 @@
+.all-movies-content {
+    display: flex;
+    flex-direction: row;
+}
