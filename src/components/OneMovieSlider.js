@@ -6,6 +6,16 @@ import data from "../data"
 const OneMovieSlider = () => {
     const [index, setIndex] = useState(0)
 
+    //Movies keep turning around 
+    useEffect ( () => { 
+        if (index < 0){
+            setIndex(data.length - 1)
+        } else if (index > data.length -1){
+            setIndex (0)
+        }
+
+    },[index])
+
     return <section className="all-movies">
 
         <div className="all-movies-content">
