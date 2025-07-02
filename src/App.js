@@ -1,10 +1,9 @@
-import Movie from "./components/Movie"
-
-
 const App = () =>{
-  return (
-    <Movie />
-  )
+  return <div>
+
+
+
+  </div>
 }
 
 export default App
