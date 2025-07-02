@@ -3,16 +3,5 @@
   padding: 0px;
 }
 
-body {
-  background-color: #141414;
-}
 
-.slider {
-  /* border: 3px red solid; */
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 
