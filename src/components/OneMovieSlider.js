@@ -8,7 +8,7 @@ const OneMovieSlider = () => {
 
     return <section className="all-movies">
 
-        <div id="all-movies-content">
+        <div className="all-movies-content">
             {data.map( (oneMovie) => {
                 const {id, image, title, age, tags, description} = oneMovie
 
