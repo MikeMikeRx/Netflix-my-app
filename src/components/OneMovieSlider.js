@@ -9,10 +9,20 @@ const OneMovieSlider = () => {
     return <section className="all-movies">
 
         <div className="all-movies-content">
-            {data.map( (oneMovie) => {
+            {data.map( (oneMovie, oneMovieIndex) => {
                 const {id, image, title, age, tags, description} = oneMovie
 
-                return <article key={id}>
+                let mainClass = "next-slide"
+
+                if (oneMovieIndex === index){
+                    mainClass = "active-slide"
+                }
+
+                if (oneMovieIndex === index -1 || (index === 0 && oneMovie === data.length - 1)){
+                    mainClass = "last-slide"
+                }
+
+                return <article key={id} className={mainClass}>
                     <img src={image} alt="" />
                     <h2>{title}</h2>
                     <p>{description}</p>

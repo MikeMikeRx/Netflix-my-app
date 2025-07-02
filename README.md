@@ -1,1 +1,1 @@
-Upgraded verion of Slider
+Upgraded version of Slider
