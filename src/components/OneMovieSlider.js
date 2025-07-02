@@ -16,6 +16,14 @@ const OneMovieSlider = () => {
 
     },[index])
 
+    //Automatic sliding
+    useEffect( () => {
+        let interval = setInterval( ()=>{
+            setIndex(index + 1)
+        }, 5000)
+        return () => clearInterval(interval)
+    },[index])
+
     return <section className="all-movies">
 
         <div className="all-movies-content">
