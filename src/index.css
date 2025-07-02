@@ -3,6 +3,12 @@
   padding: 0px;
 }
 
+body {
+  background-color: #141414;
+  margin: 0px;
+}
+
+
 .slider {
   display: flex;
   flex-direction: row;
